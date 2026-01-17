@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  display: block;
+  display: grid;
 }
 
 /* GLOBAL */
@@ -67,50 +67,23 @@ body {
 
 /* HERO */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 60px;
-}
-
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin: 20px 0;
-}
-
-.hero-buttons {
-  margin-top: 30px;
-  display: flex;
-  gap: 15px;
-}
-
-.hero-images {
-  display: grid;
-  grid-template-columns: repeat(2, 60px);
-  gap: 10px;
-}
-
-.img {
-  background: #ddd;
-  min-height: 60px;
-  min-width: 60px;
-  height: 60px;
-  width: 60px;
-  border-radius: 10px;
+  background-image: url('assets/mariia-shalabaieva-HBkpnDVc_Ic-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
-  overflow: hidden;
+  text-align: center;
+  color: white;
 }
 
-.img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero-text {
+  z-index: 1;
+}
+
+.hero-images {
+  display: none;
 }
 
 /* STRIP */
